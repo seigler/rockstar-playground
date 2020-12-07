@@ -1,0 +1,36 @@
+Rock Input
+Listen to Line
+Until Line is gone
+  Cast Line
+  Rock Input with Line
+  Listen to Line
+(end until)
+Test takes Start and Sum and Count
+  Let I be Start
+  Until I is Input minus 1
+    Let Item be Input at I
+    If Item is mysterious
+      Give back nothing
+    (end if)
+    If Count is 1
+      If Item is Sum
+        Give back Item
+      (end if)
+    (end if)
+    If Count is greater than 1 and Item is less than Sum
+      Let St be I plus 1
+      Let Su be Sum minus Item
+      Let Co be Count minus 1
+      Let Result be Test taking St, Su, Co
+      If Result ain't nothing
+        Give back Item times Result
+      (end if)
+    (end if)
+    Build I up
+    Continue
+  (end until)
+  Give back nothing
+(end function)
+
+Say Test taking 0, 2020, 2
+Say Test taking 0, 2020, 3
