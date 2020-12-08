@@ -1,6 +1,38 @@
-Rock Input
+Part One Total is 0
+Part Two Total is 0
 Listen to Line
 Until Line is gone
-  Rock Input with Line
+  Cut Line with " "
+  Cut Line at 0 into Numbers with "-"
+  Cut Line at 1 into Letter
+  Let Letter be Letter at 0
+  Cut Line at 2 into Password
+  Let One be Numbers at 0
+  Cast One
+  Let Two be Numbers at 1
+  Cast Two
+  Let Charnum be 0
+  Let Part One Counter be 0
+  Let Part Two Counter be 0
+  Until Charnum is Password
+    Let Check be Letter is Password at Charnum
+    If Check
+      Build Part One Counter up
+    (end if)
+    If Charnum is One minus 1 or Charnum is Two minus 1
+      If Check
+        Build Part Two Counter up
+      (end if)
+    (end if)
+    Build Charnum up
+  (end until)
+  If One is as low as Part One Counter and Part One Counter is as low as Two
+    Build Part One Total up
+  (end if)
+  If Part Two Counter is 1
+    Build Part Two Total up
+  (end if)
   Listen to Line
 (end until)
+Say "Part one: " with Part One Total
+Say "Part two: " with Part Two Total

@@ -1,0 +1,44 @@
+Hate is 0
+Love is 0
+Let the moment be Love
+Your story is 1
+The past is 2
+Listen to history
+Discernment is aaa bb
+Hyphen is aaaa bbbbb
+Cast Discernment
+Cast Hyphen
+Until history is empty
+  Cut history with Discernment
+  Cut history at the moment into Numbers with Hyphen
+  Cut history at your story into Letter
+  Let Letter be Letter at the moment
+  Cut history at the past into Password
+  Let One be Numbers at the moment
+  Cast One
+  Let Two be Numbers at your story
+  Cast Two
+  Let Charnum be the moment
+  Let Part One Counter be the moment
+  Let Part Two Counter be the moment
+  Until Charnum is Password
+    Let Check be Letter is Password at Charnum
+    If Check
+      Build Part One Counter up
+    (end if)
+    If Charnum is One minus your story or Charnum is Two minus your story
+      If Check
+        Build Part Two Counter up
+      (end if)
+    (end if)
+    Build Charnum up
+  (end until)
+  If One is as low as Part One Counter and Part One Counter is as low as Two
+    Build Hate up
+  (end if)
+  If Part Two Counter is your story
+    Build Love up
+  (end if)
+  Listen to history
+(end until)
+Say Hate with Discernment with Love
