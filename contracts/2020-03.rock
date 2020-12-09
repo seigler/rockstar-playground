@@ -1,0 +1,37 @@
+Tree is "#"
+Space is " "
+Rock Input
+Listen to Line
+Until Line is gone
+  Rock Input with Line
+  Listen to Line
+(end until)
+Ride takes X
+  Y is 1
+  If X is 0
+    Y is 2
+  (end if)
+  Trees are 0
+  Row is 0
+  Col is 0
+  While Row is lower than Input
+    Shatter Input at Row into Plots
+    Let Width be Plots
+    If Tree is Plots at Col
+      Build Trees up
+    (end if)
+    Let Row be plus Y
+    Let Col be plus X
+    If Col is as high as Width
+      Let Col be minus Width
+    (end if)
+  (end while)
+  Give back Trees
+(end function)
+Say Ride taking 3
+Let Product be Ride taking 1
+Let Product be times Ride taking 3
+Let Product be times Ride taking 5
+Let Product be times Ride taking 7
+Let Product be times Ride taking 0
+Say Product
