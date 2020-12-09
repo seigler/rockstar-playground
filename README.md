@@ -4,7 +4,13 @@
 To make it easy to develop Rockstar solutions to Advent of Code style problems (with an input file and no interactivity).
 
 ## Setup
-`npm install`
+``` bash
+git submodule init
+cd rockstar
+npm i
+cd -
+npm i
+```
 
 ## Usage
 `node start <trackname>`

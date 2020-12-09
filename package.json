@@ -15,6 +15,9 @@
     "nodemon": "^2.0.6"
   },
   "nodemonConfig": {
+    "events": {
+      "start": "clear"
+    },
     "ext": "rock,txt"
   }
 }
