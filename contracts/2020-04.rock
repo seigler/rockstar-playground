@@ -1,0 +1,102 @@
+Above takes One and Two and Three
+  Burn Two
+  If Two is as strong as One and Three is as strong as Two
+    Give back 1
+  (end if)
+  Give back 0
+(end function)
+Complete Passports is 0
+Valid Passports is 0
+Test takes Part
+  Cut Part into Field with ":"
+  Roll Field into Name
+  Roll Field into Value
+  If Name is "cid"
+    Give back 1
+  (end if)
+  Let Requiredfieldsfound be with 1
+  If Name is "byr"
+    Give back Above taking 1920, Value, 2002
+  (end if)
+  If Name is "iyr"
+    Give back Above taking 2010, Value, 2020
+  (end if)
+  If Name is "eyr"
+    Give back Above taking 2020, Value, 2030
+  (end if)
+  If Name is "hgt"
+    Shatter Value into Height Metric with "cm"
+    Shatter Value into Height Imperial with "in"
+    If Height Imperial is 2
+      Give back Above taking 59, Roll Height Imperial, 76
+    (end if)
+    If Height Metric is 2
+      Give back Above taking 150, Roll Height Metric, 193
+    (end if)
+  (end if)
+  If Name is "hcl"
+    Shatter Value
+    Roll Value into Scratch
+    If "#" is Scratch and Value is 6
+      Roll Value into Scratch
+      Until Scratch is nothing
+        Burn Scratch with 16
+        Let Scratch be "0" with Scratch
+        If 1 ain't Above taking 0, Scratch, 15
+          Give back 0
+        (end if)
+        Roll Value into Scratch
+      (end until)
+      Give back 1
+    (end if)
+  (end if)
+  If Name is "ecl"
+    If value is "amb" or value is "blu" or value is "brn"
+      Give back 1
+    (end if)
+    If value is "gry" or value is "grn"
+      Give back 1
+    (end if)
+    If value is "hzl" or value is "oth"
+      Give back 1
+    (end if)
+  (end if)
+  If Name is "pid"
+    Shatter Value
+    If Value ain't 9
+      Give back 0
+    (end if)
+    Roll Value into Scratch
+    Until Scratch is nothing
+      If 1 ain't Above taking 0, Scratch, 9
+        Give back 0
+      (end if)
+      Roll Value into Scratch
+    (end until)
+    Give back 1
+  (end if)
+  Give back 0
+(end function)
+Rock Input
+Listen to Line
+Until Line is gone
+  Requiredfieldsfound is 0
+  Stillvalid is 1
+  Until Line is gone
+    Cut Line into Parts with " "
+    Roll Parts into Part
+    Until Part is gone
+      Let Stillvalid be of Test taking Part
+      Roll Parts into Part
+    (end until)
+    Listen to Line
+  (end until)
+  If Requiredfieldsfound is 7
+    Build Complete Passports up
+    If Stillvalid is 1
+      Build Valid Passports up
+    (end if)
+  (end if)
+  Listen to Line
+(end until)
+Say Complete Passports with " " with Valid Passports
