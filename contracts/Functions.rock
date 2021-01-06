@@ -1,0 +1,10 @@
+Initialism takes String ( "Thinking hurts my brain" => "Thmb" )
+  Cut String into Words with " "
+  Until Words is empty
+    Roll Words into Word
+    Rock Word at 0 into Letters
+  (end until)
+  Unite Letters
+  Give back Letters
+(end func)
+

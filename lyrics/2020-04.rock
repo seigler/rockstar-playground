@@ -1,37 +1,88 @@
-The king takes gold and land and fealty
+The king takes gold, land and fealty
   Burn fealty
   If fealty is as strong as gold and land is as strong as fealty
     Give back a little
 
   Give back my freedom
 
-My freedom's slipping
-Build it up, up
+My freedom's 0
 A little is sufficient
 Build it up
 
-Burn 32 into your example
-Burn 58 into play
-(1 2 9 6 15 16 98-b 99-c 101-e)
+Your example is 32
+Burn it
+Play is 58
+Burn it
+Blob is nothing
+Counter is nothing
+
+Func takes String
+  Cut String into Words with your example
+  Until Words is empty
+    Roll Words into Word
+    Rock Word at 0 into Letters
+
+  Join Letters
+  Push letters into Blob
+
+Put Func into Keep
+
+Everyone says consider it done
+Keep taking it
+Everyone says be yourself, rockstar
+Keep taking it
+Everyone says it's your redemption
+Keep taking it
+Everyone says even you rock
+Keep taking it
+Everyone says he'll get there
+Keep taking it
+Everyone says he'll cry less
+Keep taking it
+Everyone says people, it's daylight
+Keep taking it
+Everyone says even cherubs lie
+Keep taking it
+Everyone says anoint me, brother
+Keep taking it
+Everyone says bastards lie, understand
+Keep taking it
+Everyone says be righteous now
+Keep taking it
+Everyone says gods rescue you
+Keep taking it
+Everyone says gods rescue nobody
+Keep taking it
+Everyone says he zaps lies
+Keep taking it
+Everyone says obey the hierarchy
+Keep taking it
+
+Say Blob
+Check Day takes Value
+  Build counter up
+  Let Answer be Value is Blob at counter
+  Give back Answer
 
 Liberation takes work
   Cut work with play
   Roll work into the day
   Roll work into your life
-  If the day is "cid"
+  Counter is 0
+  If Check Day taking the day (cid)
     Give back a little
 
   Let authority be with 1
-  If the day is "byr"
+  If Check Day taking the day (byr)
     Give back the king taking 1920 & 2002 & your life
 
-  If the day is "iyr"
+  If Check Day taking the day (iyr)
     Give back the king taking 2010 & 2020 & your life
 
-  If the day is "eyr"
+  If Check Day taking the day (eyr)
     Give back the king taking 2020 & 2030 & your life
 
-  If the day is "hgt"
+  If Check Day taking the day (hgt)
     Shatter your life into a tapestry with "cm"
     Shatter your life into a constellation with "in"
     If a constellation is 2
@@ -41,7 +92,7 @@ Liberation takes work
       Give back the king taking 150 & 193, roll a tapestry
 
 
-  If the day is "hcl"
+  If Check Day taking the day (hcl)
     Shatter your life
     Roll your life into focus
     If "#" is focus and your life is 6
@@ -51,37 +102,34 @@ Liberation takes work
         Let focus be "0" with focus
         If 1 ain't the king taking 0, 15, focus
           Give back my freedom
-    
+        
         Roll your life into focus
+      
+      Give back a little
+    
   
-      Give back a little
-
-
-  If the day is "ecl"
-    If your life is "amb" or your life is "blu" or your life is "brn"
-      Give back a little
-
-    If your life is "gry" or your life is "grn"
-      Give back a little
-
-    If your life is "hzl" or your life is "oth"
-      Give back a little
-
-
-  If the day is "pid"
+  If Check Day taking the day (pid)
     Shatter your life
-    If your life ain't 9
-      Give back my freedom
-
-    Roll your life into purpose
-    Until purpose is nothing
-      If 1 ain't the king taking 0, 9, purpose
-        Give back my freedom
-  
-      Roll your life into purpose
-
+    If your life is 9
+      Until your life is 0
+        Roll your life into purpose
+        If 1 ain't the king taking 0, 9, purpose
+          Give back my freedom
+        
+      
+    
     Give back a little
-
+  
+  If Check Day taking the day (ecl)
+    Color Index is 0
+    Until Color Index is 7
+      If Check Day taking your life
+        Give back a little
+      
+      Build Color Index up
+    
+  
+  Say the day with " : " with your life
   Give back my freedom
 
 Defiance is nothing
@@ -93,10 +141,9 @@ While it ain't gone,
   Knock it down, down
   Until this is gone
     Cut this into the narrative with your example
-    Roll the narrative into action
-    Until it is gone
-      Let the story be of liberation taking action
+    Until my freedom is the narrative
       Roll the narrative into action
+      Let the story be of liberation taking action
 
     Listen to this
 
